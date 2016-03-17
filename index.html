@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+        <link rel="stylesheet" href="./css/main.css" type="text/css" />
+        <script type="text/javascript" src="./js/dado.js"></script>
+        <script type="text/javascript" src="./js/calendario.js"></script>
+        <script type="text/javascript" src="./js/piano.js"></script>
+    </head>
+    <body onload="crearCalendario();crearTeclasPiano();">
+        <div class="cabecera">
+            <img src="./img/titulo.png"></img>
+        </div>
+        
+        <div class="contenedorPracticas">
+            <div class="tituloPractica">Practica 1 El dado de 6</div>
+            <div class="practica">
+                <div class="dado">  
+                    <a><img onclick="tirarDado(this);" class="dadoImg" src="./img/dado0.png"></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contenedorPracticas">
+            <div class="tituloPractica">Practica 2 Calendario</div>
+            <div class="practica">
+                <div class="contenedorCalendario">
+                        <div class="mesSiguienteAnterior" onclick="cambiarMes(-1)">
+                            <img onmouseover="imagenOverPrev(this)" onmouseout="imagenOutPrev(this)" src="./img/prevB.png">
+                        </div>
+                        <div class="nombreMes"></div>
+                        <div class="mesSiguienteAnterior" onclick="cambiarMes(1)">
+                            <img onmouseover="imagenOverNext(this)" onmouseout="imagenOutNext(this)" src="./img/nextB.png">
+                        </div>
+                    <div class="mes">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contenedorPracticas" class="practicaPiano">
+            <div class="tituloPractica">Practica 3 Piano</div>
+            <div class="practica" class="practicaPiano">
+                <div class="contenedorPiano">
+                    <div class="piano">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>
