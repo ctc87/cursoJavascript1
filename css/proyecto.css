@@ -1,0 +1,113 @@
+#ship {
+  width:100px;
+  height:120px;
+  border:0px solid #000;
+  background-image:url(../img/proyecto/sprites/naves.png);
+  background-position: 290px 0px;
+  position: absolute;
+}
+
+.shoot  {
+    width: 5px;
+    height: 5px;
+    background-color: yellow;
+    /*display:none;*/
+    box-shadow: 0.5px 0.5px 1.5px #000 inset;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.shooting {
+  display:block;
+}
+
+
+.asteroid {
+  width:125px;
+  height:120px;
+  border:0px solid #000;
+  background-image:url(../img/proyecto/sprites/moblur.png);
+  background-position:left top;
+  animation:rotateH 1.6s steps(4) infinite, rotateV 0.4s steps(8) infinite;
+  position: absolute;
+}
+
+.explosion {
+  position: absolute;
+  width:128px;
+  height:128px;
+  border:0px solid #000;
+  background-image:url(../img/proyecto/sprites/explosion.png);
+  background-position:left top;
+  animation:explotarH 1.1s steps(11), exlpotarV 0.1s steps(10);
+  display:inline-block;
+}
+
+body {
+    background-image: url(../img/proyecto/backgrounds/abstract-nebula-blue.jpg);
+    background-position: 0px 0px;
+  	background-repeat: repeat;
+	  animation: animatedBackground 20s linear infinite;
+}
+
+
+/* Animación CSS de caminar */
+@keyframes walk {
+  /*0% { background-position:0 0 }*/
+  100% { background-position:100px 0 }
+}
+
+/* Animación CSS de rotarV */
+@keyframes rotateV {
+     0% { background-position-x:   0px; }
+   100% { background-position-x: -1000px; }
+  
+}
+
+/* Animación CSS de rotarV */
+@keyframes rotateH {
+     0% { background-position-y:   0px; }
+   100% { background-position-y: -500px; }
+  
+}
+
+/* Animación CSS de explotar */
+@keyframes exlpotarV {
+     0% { background-position-x:   0px; }
+   100% { background-position-x: -1280px; }
+  
+}
+
+/* Animación CSS de explotar */
+@keyframes explotarH {
+     0% { background-position-y:   0px; }
+   100% { background-position-y: -1408px; }
+  
+}
+
+@keyframes animatedBackground {
+	from { background-position: 0 100%; }
+	to { background-position: 0 0; }
+}
+
+
+/* -webkit-animation: playv 6s steps(6) infinite, playh 1s steps(6) infinite; */
+
+/*}*/
+
+
+/*@-webkit-keyframes playv {*/
+/*     0% { background-position-y:   0px; }*/
+/*   100% { background-position-y: -315px; }*/
+/*}*/
+
+/*@-webkit-keyframes playh {*/
+/*     0% { background-position-x:   0px; }*/
+/*   100% { background-position-x: -320px; }*/
+/*}*/
+
+
+
+.caminar {
+  animation:walk .100s steps(2) forwards;
+}

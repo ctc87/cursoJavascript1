@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> </title>
+        <title> Practicas Curso JS</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
         <link rel="stylesheet" href="./css/main.css" type="text/css" />
+        <link rel="stylesheet" href="./css/minijuego.css" type="text/css" />
+        <link rel="stylesheet" href="./css/animate.css" type="text/css" />
         <script type="text/javascript" src="./js/dado.js"></script>
         <script type="text/javascript" src="./js/calendario.js"></script>
         <script type="text/javascript" src="./js/piano.js"></script>
@@ -38,6 +41,7 @@
             </div>
         </div>
         
+        <img src="./img/piano.png" class="helpPiano" />
         <div class="contenedorPracticas" class="practicaPiano">
             <div class="tituloPractica">Practica 3 Piano</div>
             <div class="practica" class="practicaPiano">
@@ -48,6 +52,21 @@
                 </div>
             </div>
         </div>
+        
+        <div class="contenedorPracticas" id="practicaMinijuego">
+            <div class="tituloPractica">Practica 5 Minijuego</div>
+            <div class="practica" >
+                <div class="contenedorMinijuego" style="border:solid">
+                    <button onClick="inicializar(player); inicializar(enemy); inicializar(enemy2)">Start</button>
+                    <div id="player"></div>
+                    <div id="enemy"></div>
+                    <div id="enemy2"></div>
+            
+                </div>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="./js/minijuego.js"></script>
         
     </body>
 </html>

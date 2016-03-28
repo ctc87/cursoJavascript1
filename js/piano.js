@@ -6,10 +6,6 @@
     this.arraySonidos = this.arrTeclas.map(function(tecla, index) {
          return new Audio("./audio/" + tecla.toLocaleLowerCase() +  ".mp3")
     });
-    this.borrarCalendario = function() {
-        var mes = document.getElementsByClassName('mes')[0];
-        mes.innerHTML = ""
-    }
     
     
             document.onkeydown = function(evt) {

@@ -4,7 +4,11 @@
     var itercaciones = 15;
     
     function cambiarDado(number, imgNode) {
+       console.log(imgNode)
+    //   imgNode.classList.add('animated')
+    //   imgNode.classList.add('abounceOutLeft')
        imgNode.src = "./img/dado" + number + ".png"
+       
     };
     
     function numeroAleatorio(min, max) {
